@@ -1,0 +1,24 @@
+name: Renovate Container Updates
+
+on:
+  schedule:
+    # run once a week at 4:10 on thursdays
+    - cron: '10 4 * * 4'
+  # Allows manual triggering of the workflow
+  workflow_dispatch: 
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        # https://github.com/actions/checkout
+        uses: actions/checkout@v4
+
+      - name: Run Renovate
+        # https://github.com/renovatebot/github-action
+        uses: renovatebot/github-action@v41.0.13
+        with:
+          token: ${{ secrets.RENOVATE_TOKEN }}
+          configurationFile: .github/renovate-global.json
+
