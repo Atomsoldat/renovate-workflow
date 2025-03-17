@@ -1,4 +1,4 @@
-name: Renovate Container Updates
+name: Renovate Cronjob
 
 on:
   schedule:
