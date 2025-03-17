@@ -6,5 +6,8 @@
   "onboarding": true,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
-  "repositories": ["Atomsoldat/lichturm-website"]
+  "repositories": ["Atomsoldat/lichturm-website"],
+  "docker": {
+    "pinDigests": true
+  }
 }
