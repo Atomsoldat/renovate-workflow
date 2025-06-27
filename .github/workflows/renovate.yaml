@@ -22,3 +22,11 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: .github/renovate-global.json
 
+  workflow-keepalive:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      # https://github.com/liskin/gh-workflow-keepalive/tree/main
+      - uses: liskin/gh-workflow-keepalive@v1
