@@ -3,7 +3,7 @@ name: Renovate Cronjob
 on:
   schedule:
     # run once a week at 4:10 on thursdays
-    - cron: '10 4 * * 4'
+    - cron: '10 4 * * 2,4'
   # Allows manual triggering of the workflow
   workflow_dispatch: 
 
