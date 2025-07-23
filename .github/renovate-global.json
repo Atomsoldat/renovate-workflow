@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "branchPrefix": "github-renovate/",
   "dependencyDashboardTitle": "Dependency Dashboard self-hosted",
-  "gitAuthor": "Skeletal Minion <minion@lichturm.de>",
+  "gitAuthor": "Leon Welchert <lichturm@posteo.de>",
   "onboarding": true,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
