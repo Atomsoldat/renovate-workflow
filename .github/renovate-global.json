@@ -8,7 +8,8 @@
   "platform": "github",
   "repositories": [
     "Atomsoldat/lichturm-website",
-    "MausoleumManagement/cilium"
+    "MausoleumManagement/cilium",
+    "MausoleumManagement/cluster-api"
   ],
   "docker": {
     "pinDigests": true
