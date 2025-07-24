@@ -11,7 +11,9 @@
     "MausoleumManagement/cilium",
     "MausoleumManagement/cluster-api"
   ],
-  "docker": {
-    "pinDigests": true
-  }
+  "packageRules": [
+    { "matchCategories": ["docker"],
+      "pinDigests": true
+    }
+  ]
 }
