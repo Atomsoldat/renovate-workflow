@@ -6,11 +6,9 @@
   "onboarding": true,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
-  "repositories": [
-    "Atomsoldat/lichturm-website",
-    "MausoleumManagement/cilium",
-    "MausoleumManagement/cluster-api"
-  ],
+  "autodiscover": "true",
+  // text enclosed in slashes gets treated as regex
+  "autodiscoverFilter":  ["/MausoleumManagement/.*/", "/Atomsoldat/lichturm-website/"]
   "packageRules": [
     { "matchCategories": ["docker"],
       "pinDigests": true
