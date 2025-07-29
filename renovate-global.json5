@@ -6,12 +6,11 @@
   "onboarding": true,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
-  "autodiscover": "true",
-  // text enclosed in slashes gets treated as regex
-  "autodiscoverFilter":  ["/MausoleumManagement/.*/", "/Atomsoldat/lichturm-website/"]
-  "packageRules": [
-    { "matchCategories": ["docker"],
-      "pinDigests": true
-    }
-  ]
+  "autodiscover": true,
+  "autodiscoverFilter": [
+    "/MausoleumManagement/.*/",
+    "/Atomsoldat/lichturm-website/"
+  ],
+  "packageRules": [{"matchCategories": ["docker"], "pinDigests": true}]
 }
+
