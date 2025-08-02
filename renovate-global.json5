@@ -3,6 +3,9 @@
   "branchPrefix": "github-renovate/",
   "dependencyDashboardTitle": "Dependency Dashboard self-hosted",
   "gitAuthor": "Leon Welchert <lichturm@posteo.de>",
+  "assignees": ["Atomsoldat"],
+  // take a random sample from the list of maintainers
+  "assigneesSampleSize": 1,
   "onboarding": true,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
