@@ -1,5 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+ 
+  // https://docs.renovatebot.com/config-presets/
+  // https://docs.renovatebot.com/presets-config/
+  "extends": [ "config:best-practices" ],
+
   "branchPrefix": "github-renovate/",
   "dependencyDashboardTitle": "Dependency Dashboard self-hosted",
   "assignees": ["Atomsoldat"],
