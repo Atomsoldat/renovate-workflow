@@ -22,7 +22,8 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: renovate-global.json5
         env:
-          LOG_LEVEL: 'debug'
+          #LOG_LEVEL: 'debug'
+          LOG_LEVEL: 'info'
 
   workflow-keepalive:
     if: github.event_name == 'schedule'
