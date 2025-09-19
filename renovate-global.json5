@@ -16,6 +16,7 @@
   "autodiscover": true,
   "autodiscoverFilter": [
     "/MausoleumManagement/.*/",
+    "/GruftGeschoepfe/.*/",
     "/Atomsoldat/lichturm-website/"
   ],
   "packageRules": [{"matchCategories": ["docker"], "pinDigests": true}]
