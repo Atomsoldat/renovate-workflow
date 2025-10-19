@@ -15,6 +15,14 @@ jobs:
         # https://github.com/actions/checkout
         uses: actions/checkout@v4
 
+      - name: Cache Renovate data
+        uses: actions/cache@v4
+        with:
+          path: /tmp/renovate/cache
+          key: renovate-cache-${{ github.run_id }}
+          restore-keys: |
+            renovate-cache-
+
       - name: Run Renovate
         # https://github.com/renovatebot/github-action
         uses: renovatebot/github-action@v41.0.13
