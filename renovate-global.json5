@@ -15,9 +15,10 @@
   "platform": "github",
   "autodiscover": true,
   "autodiscoverFilter": [
-    "/MausoleumManagement/.*/",
-    "/GruftGeschoepfe/.*/",
-    "/Atomsoldat/lichturm-website/"
+    //"/MausoleumManagement/.*/",
+    //"/GruftGeschoepfe/.*/",
+    //"/Atomsoldat/lichturm-website/"
+    "/Atomsoldat/renovate_debug_sandbox/",
   ],
   "packageRules": [{"matchCategories": ["docker"], "pinDigests": true}]
 }
