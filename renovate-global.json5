@@ -11,13 +11,22 @@
   // take a random sample from the list of maintainers
   "assigneesSampleSize": 1,
   "onboarding": true,
+  // by default, renovate will rate limit MRs based on *some* metric
+  // the rates seem to be pretty low, because our monorepo ran into
+  // that limit; MRs beyond that had to be manually added via
+  // the dependency dashboard; it will also omit this information
+  // from the regular logs 
+  // since we don't do any heavy computation
+  // in our MR pipeline (we dont have one), i don't see the point of
+  // limiting this
+  "prConcurrentLimit": 0,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
   "autodiscover": true,
   "autodiscoverFilter": [
-    //"/MausoleumManagement/.*/",
-    //"/GruftGeschoepfe/.*/",
-    //"/Atomsoldat/lichturm-website/"
+    "/MausoleumManagement/.*/",
+    "/GruftGeschoepfe/.*/",
+    "/Atomsoldat/lichturm-website/"
     "/Atomsoldat/renovate_debug_sandbox/",
   ],
   "packageRules": [{"matchCategories": ["docker"], "pinDigests": true}]
