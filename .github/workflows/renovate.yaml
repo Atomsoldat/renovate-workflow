@@ -22,8 +22,11 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: renovate-global.json5
         env:
-          #LOG_LEVEL: 'debug'
-          LOG_LEVEL: 'info'
+          # renovate hides a lot of relevant info in the debug
+          # output, so even though it's really noisy, it's better
+          # to have it on
+          LOG_LEVEL: 'debug'
+          #LOG_LEVEL: 'info'
 
   workflow-keepalive:
     if: github.event_name == 'schedule'
