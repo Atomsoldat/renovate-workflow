@@ -20,6 +20,7 @@
   // in our MR pipeline (we dont have one), i don't see the point of
   // limiting this
   "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
   "onboardingBranch": "github-renovate/configure",
   "platform": "github",
   "autodiscover": true,
