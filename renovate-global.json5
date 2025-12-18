@@ -28,6 +28,7 @@
     "/MausoleumManagement/.*/",
     "/GruftGeschoepfe/.*/",
     "/Atomsoldat/lichturm-website/",
+    "/Atomsoldat/bibliophage",
     "/Atomsoldat/renovate_debug_sandbox/",
   ],
   "packageRules": [{"matchCategories": ["docker"], "pinDigests": true}]
